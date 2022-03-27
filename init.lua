@@ -14,3 +14,9 @@ require("plugin-config.bufferline")
 require("plugin-config.lualine")
 -- telescope
 require("plugin-config.telescope")
+-- dashboard
+require("plugin-config.dashboard")
+-- project
+require("plugin-config.project")
+-- treesitter
+require("plugin-config.nvim-treesitter")

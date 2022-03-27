@@ -5,6 +5,9 @@ local map = vim.api.nvim_set_keymap
 -- 复用 opt 参数
 local opt = {noremap = true, silent = true }
 
+-- xiaoqiang
+map("n", "S", ":w<CR>", opt)
+
 -- windows 分屏快捷键
 map("n", "sv", ":vsp<CR>", opt)
 map("n", "sh", ":sp<CR>", opt)
