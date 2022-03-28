@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["lualine-lsp-progress"] = {
     loaded = true,
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
@@ -93,6 +98,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["nvim-tree.lua"] = {
     loaded = true,

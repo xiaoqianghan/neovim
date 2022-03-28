@@ -4,8 +4,10 @@ packer.startup(
     -- Packer 可以管理自己本身
     use 'wbthomason/packer.nvim'
     -- 你的插件列表...
-    -- tokyonight
+    -- theme tokyonight
     use("folke/tokyonight.nvim")
+    -- gruvbox
+    use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
     -- nvim-tree 
     use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
     -- bufferline 
