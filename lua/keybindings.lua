@@ -117,6 +117,10 @@ map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 -- 全局搜索
 map("n", "<leader>f", ":Telescope live_grep<CR>", opt)
 
+-- hop
+map("n", "<leader>o", ":HopWord<CR>", opt)
+map("n", "<leader>i", ":HopWordCurrentLine<CR>", opt)
+
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
   i = {
