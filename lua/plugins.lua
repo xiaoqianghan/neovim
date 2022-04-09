@@ -36,8 +36,6 @@ packer.startup(
     }
     -- lsp client
     use({"neovim/nvim-lspconfig" })
-    -- lsp server installer
-    use({"williamboman/nvim-lsp-installer"})
     -- Packer
     end)
 
