@@ -8,16 +8,16 @@ packer.startup(
     use("folke/tokyonight.nvim")
     -- gruvbox
     use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
-    -- nvim-tree 
+    -- nvim-tree
     use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
-    -- bufferline 
+    -- bufferline
     use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }}) 
     -- lualine
     use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
     use("arkav/lualine-lsp-progress")
-    -- telescope 
-    use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
-     -- dashboard-nvim 
+    -- telescope
+    use {'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+     -- dashboard-nvim
     use("glepnir/dashboard-nvim")
     -- project
     use("ahmedkhalf/project.nvim")
@@ -34,7 +34,11 @@ packer.startup(
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
       end
     }
-    -- Packer 
+    -- lsp client
+    use({"neovim/nvim-lspconfig" })
+    -- lsp server installer
+    use({"williamboman/nvim-lsp-installer"})
+    -- Packer
     end)
 
 -- 每次保存 plugins.lua 自动安装插件

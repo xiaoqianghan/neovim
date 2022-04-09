@@ -20,3 +20,5 @@ require("plugin-config.dashboard")
 require("plugin-config.project")
 -- treesitter
 require("plugin-config.nvim-treesitter")
+-- 内置LSP
+require("lsp.setup")
