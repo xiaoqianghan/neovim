@@ -6,4 +6,4 @@ lsp_config.sumneko_lua.setup(lua_opts)
 -- pyright
 lsp_config.pyright.setup{}
 -- ruby
-lsp_config.sorbet.setup{}
+lsp_config.solargraph.setup{}
