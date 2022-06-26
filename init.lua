@@ -4,21 +4,15 @@ require("basic")
 require("plugins")
 -- 快捷键映射
 require("keybindings")
--- 主题设置 （新增）
+-- 主题设置 
 require("colorscheme")
--- 插件配置
+-- 插件配置 tree project
 require("plugin-config.nvim-tree")
--- bufferline
+-- bufferline error reminder
 require("plugin-config.bufferline")
--- lualine
-require("plugin-config.lualine")
--- telescope
+-- telescope fuzzy search
 require("plugin-config.telescope")
--- dashboard
-require("plugin-config.dashboard")
--- project
-require("plugin-config.project")
--- treesitter
+-- treesitter grammer highlight
 require("plugin-config.nvim-treesitter")
 -- 内置LSP
 require("lsp.setup")
