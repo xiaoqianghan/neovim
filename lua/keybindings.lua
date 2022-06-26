@@ -124,7 +124,7 @@ map("n", "<leader>i", ":HopWordCurrentLine<CR>", opt)
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
   i = {
-    -- 上下移动
+    -- 上下移动选中文本
     ["<C-j>"] = "move_selection_next",
     ["<C-k>"] = "move_selection_previous",
     ["<Down>"] = "move_selection_next",
@@ -142,6 +142,8 @@ pluginKeys.telescopeList = {
 
 -- lsp 回调函数快捷键设置
 pluginKeys.mapLSP = function(mapbuf)
+  -- formatting
+  mapbuf("n", "df", "<cmd>lua vim.lsp.buf.formatting()<CR>", opt)
   -- rename
   mapbuf("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opt)
   -- code action
