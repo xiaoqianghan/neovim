@@ -1,6 +1,6 @@
 local lspconfig= require("lspconfig")
 
-local path_to_elixirls = vim.fn.expand("/home/xiaoqiang/kode/elixir-ls/release/language_server.sh")
+local path_to_elixirls = vim.fn.expand("/Users/xiaoqianghan/.elixir-ls/release/language_server.sh")
 
 -- Neovim doesn't support snippets out of the box, so we need to mutate the
 -- capabilities we send to the language server to let them know we want snippets.
