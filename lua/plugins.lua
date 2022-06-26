@@ -11,10 +11,21 @@ packer.startup(
     use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
     -- bufferline reminder
     use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }}) 
-    -- telescope
+    
+    -- telescope  depend on rigrep
+    -- install ripgrep
+    -- sudo add-apt-repository ppa:x4121/ripgrep
+    -- sudo apt-get update
+    -- sudo apt install ripgrep
     use {'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+    -- uncessary plugin
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    
     -- treesitter grammer highlight
+    -- :TSInstallInfo
+    -- :TSInstall <language_to_install>
     use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+
     -- hop quick remove
     use {
       'phaazon/hop.nvim',
