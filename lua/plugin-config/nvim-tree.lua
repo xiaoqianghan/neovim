@@ -30,8 +30,6 @@ nvim_tree.setup({
     side = "left",
     -- 隐藏根目录
     hide_root_folder = false,
-    -- 打开第一个文件自动resize
-    auto_resize = true,
     -- 自定义列表中快捷键
     mappings = {
       custom_only = false,

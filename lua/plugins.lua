@@ -3,32 +3,33 @@ packer.startup(
   function(use)
     -- Packer 可以管理自己本身
     use 'wbthomason/packer.nvim'
-    -- 你的插件列表...
     -- theme tokyonight
     use("folke/tokyonight.nvim")
     -- gruvbox
     use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
-    -- nvim-tree
+    -- nvim-tree project file tree
     use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
-    -- bufferline
+    -- bufferline reminder
     use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }}) 
-    -- lualine
-    use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
-    use("arkav/lualine-lsp-progress")
-    -- telescope
+    
+    -- telescope  depend on rigrep
+    -- install ripgrep
+    -- sudo add-apt-repository ppa:x4121/ripgrep
+    -- sudo apt-get update
+    -- sudo apt install ripgrep
     use {'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
-     -- dashboard-nvim
-    use("glepnir/dashboard-nvim")
-    -- project
-    use("ahmedkhalf/project.nvim")
-    -- treesitter
+    -- uncessary plugin
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    
+    -- treesitter grammer highlight
+    -- :TSInstallInfo
+    -- :TSInstall <language_to_install>
     use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-    -- coc vim
-    use({'neoclide/coc.nvim', branch = 'release'})
-    -- hop
+
+    -- hop quick remove
     use {
       'phaazon/hop.nvim',
-      branch = 'v1', -- optional but strongly recommended
+      branch = 'v1', -- optional but strongly recommendSed
       config = function()
       -- you can configure Hop the way you like here; see :h hop-config
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
@@ -36,6 +37,12 @@ packer.startup(
     }
     -- lsp client
     use({"neovim/nvim-lspconfig" })
+    -- autocomplete and snippets
+    use("hrsh7th/nvim-cmp")
+    use("hrsh7th/cmp-nvim-lsp")
+    use("hrsh7th/cmp-vsnip")
+    use("hrsh7th/vim-vsnip")
+    use("onsails/lspkind-nvim")
     -- Packer
     end)
 
