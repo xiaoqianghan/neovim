@@ -1,0 +1,6 @@
+{
+  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.mixEnv": "dev",
+  "elixirLS.mixTarget": "test",
+  "elixir.pathToElixirLS": "/Users/xiaoqianghan/.elixir-ls/release/language_server.sh"
+}

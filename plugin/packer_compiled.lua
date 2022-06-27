@@ -74,15 +74,10 @@ _G.packer_plugins = {
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  ["cmp-nvim-lsp"] = {
+  ["coc.nvim"] = {
     loaded = true,
-    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cmp-vsnip"] = {
-    loaded = true,
-    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
-    url = "https://github.com/hrsh7th/cmp-vsnip"
+    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
@@ -95,25 +90,10 @@ _G.packer_plugins = {
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/hop.nvim",
     url = "https://github.com/phaazon/hop.nvim"
   },
-  ["lspkind-nvim"] = {
-    loaded = true,
-    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
-    url = "https://github.com/onsails/lspkind-nvim"
-  },
   ["lush.nvim"] = {
     loaded = true,
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -159,11 +139,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/vim-vsnip",
-    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 

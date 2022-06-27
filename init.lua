@@ -14,5 +14,3 @@ require("plugin-config.bufferline")
 require("plugin-config.telescope")
 -- treesitter grammer highlight
 require("plugin-config.nvim-treesitter")
--- 内置LSP
-require("lsp.setup")

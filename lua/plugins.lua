@@ -35,17 +35,9 @@ packer.startup(
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
       end
     }
-    -- lsp client
-    use({"neovim/nvim-lspconfig" })
-    -- autocomplete and snippets
-    use("hrsh7th/nvim-cmp")
-    use("hrsh7th/cmp-nvim-lsp")
-    use("hrsh7th/cmp-vsnip")
-    use("hrsh7th/vim-vsnip")
-    use("onsails/lspkind-nvim")
+    use {'neoclide/coc.nvim', branch = 'release'}
     -- Packer
     end)
-
 -- 每次保存 plugins.lua 自动安装插件
 pcall(
   vim.cmd,
