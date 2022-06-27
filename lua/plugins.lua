@@ -35,6 +35,9 @@ packer.startup(
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
       end
     }
+    -- :CocInstall coc-elixir
+    -- depends node > 12
+    -- modify coc-settings.json elixir ls path
     use {'neoclide/coc.nvim', branch = 'release'}
     -- Packer
     end)
