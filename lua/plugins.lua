@@ -40,6 +40,7 @@ packer.startup(
     -- modify coc-settings.json elixir ls path
     use {'neoclide/coc.nvim', branch = 'release'}
     -- Packer
+    use { "williamboman/mason.nvim" }
     end)
 -- 每次保存 plugins.lua 自动安装插件
 pcall(

@@ -95,6 +95,11 @@ _G.packer_plugins = {
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
   },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/xiaoqianghan/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
